@@ -217,7 +217,7 @@ document.getElementById('nav-profile').onclick = function() { navigate('profile'
 document.getElementById('nav-guides').onclick = function() { navigate('guides'); };
 window.addEventListener('hashchange', handleHash);
 
-document.getElementById('guidesCount').textContent = '(' + GUIDE_DATA.length + ')';
+document.getElementById('guidesCount').textContent = GUIDE_DATA.length;
 document.getElementById('profileCount').textContent = GUIDE_DATA.length;
 
 renderList('guidesList');
