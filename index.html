@@ -121,6 +121,18 @@
     .guide-back { margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--border); }
     .guide-back a { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 500; color: var(--text-muted); padding: 10px 22px; border: 1px solid var(--border); border-radius: 100px; transition: all 0.2s; cursor: pointer; text-decoration: none; }
     .guide-back a:hover { color: var(--accent); border-color: var(--border-light); background: rgba(102,192,244,0.04); }
+    .comment-section { margin-top: 32px; padding: 28px; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-xl); }
+    .comment-section h3 { font-size: 16px; font-weight: 600; color: var(--text-primary); margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+    .comment-field { width: 100%; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius); padding: 10px 14px; font-size: 13px; color: var(--text-primary); font-family: inherit; transition: border-color 0.2s; margin-bottom: 10px; outline: none; }
+    .comment-field:focus { border-color: var(--accent); }
+    .comment-field::placeholder { color: var(--text-muted); }
+    .comment-row { display: flex; gap: 10px; }
+    .comment-row .comment-field { flex: 1; }
+    .comment-textarea { min-height: 80px; resize: vertical; }
+    .comment-submit { background: linear-gradient(135deg,var(--accent),var(--pink)); color: #fff; border: none; padding: 10px 32px; border-radius: 100px; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.25s; letter-spacing: 0.2px; }
+    .comment-submit:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(102,192,244,0.25); }
+    .comment-error { display: none; margin-top: 12px; padding: 12px 16px; background: rgba(255,71,87,0.1); border: 1px solid rgba(255,71,87,0.2); border-radius: var(--radius); font-size: 13px; color: #ff6b6b; line-height: 1.5; }
+    .comment-error .err-code { font-family: 'JetBrains Mono',monospace; font-weight: 700; color: #ff4757; }
     @media (max-width: 768px) { .profile-card { flex-direction: column; align-items: center; text-align: center; padding: 24px 20px; } .profile-info { text-align: center; } .profile-tags { justify-content: center; } .profile-desc { max-width: 100%; } .guide-body { padding: 20px; } .guide-header { padding: 24px 20px; } .guide-header h1 { font-size: 22px; } .nav { display: none; } .stats-row { grid-template-columns: repeat(3,1fr); } }
     @media (max-width: 480px) { .stats-row { grid-template-columns: repeat(2,1fr); } .page-content { padding: 16px; } }
     ::-webkit-scrollbar { width: 6px; } ::-webkit-scrollbar-track { background: var(--bg-deep); } ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; } ::-webkit-scrollbar-thumb:hover { background: var(--border-light); }
@@ -340,7 +352,34 @@
         document.querySelectorAll('.back-to-guides').forEach(function(el) {
           el.onclick = function() { navigate('guides'); };
         });
+        addCommentForm();
       }
+    }
+
+    function addCommentForm() {
+      var existing = document.getElementById('fakeCommentForm');
+      if (existing) existing.remove();
+      var html = '<div id="fakeCommentForm" class="comment-section">'
+        + '<h3>✏️ Оставить комментарий</h3>'
+        + '<div class="comment-row"><input class="comment-field" id="fakeNick" placeholder="Ваш никнейм *" maxlength="32"></div>'
+        + '<input class="comment-field" id="fakeEmail" placeholder="Ваша почта (необязательно)" maxlength="64">'
+        + '<textarea class="comment-field comment-textarea" id="fakeText" placeholder="Напишите комментарий... *"></textarea>'
+        + '<button class="comment-submit" id="fakeSubmit">Отправить</button>'
+        + '<div class="comment-error" id="fakeError"><span>❌ Ошибка <span class="err-code" id="fakeErrCode">0</span>: сервер временно недоступен. Попробуйте позже.</span></div>'
+        + '</div>';
+      var guideContent = document.getElementById('guideContent');
+      guideContent.insertAdjacentHTML('beforeend', html);
+      document.getElementById('fakeSubmit').onclick = function() {
+        var nick = document.getElementById('fakeNick').value.trim();
+        var text = document.getElementById('fakeText').value.trim();
+        if (!nick || !text) {
+          document.getElementById('fakeError').style.display = 'block';
+          document.getElementById('fakeErrCode').textContent = 'ERR_' + Math.floor(Math.random() * 9000000000 + 1000000000);
+          return;
+        }
+        document.getElementById('fakeError').style.display = 'block';
+        document.getElementById('fakeErrCode').textContent = 'ERR_' + Math.floor(Math.random() * 9000000000 + 1000000000);
+      };
     }
 
     function renderList(containerId) {
