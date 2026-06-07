@@ -1,5 +1,5 @@
 var awpGuide = '<div class="guide-header"><div class="guide-header-meta"><span class="badge badge-awp">AWP Guide</span><span class="meta-item">16 \u0444\u0435\u0432 2025</span><span class="meta-item">174 просмотра</span><span class="meta-item gold">★★★★☆</span></div><h1>Руководство по игре с AWP: в 21 этап</h1><div class="author">by <strong>Чекунец</strong></div></div><div class="guide-body">'
-  + '<p>Руководство по игре с AWP в 21 этап. Привет, меня зовут Арсентий, и я — простой игрок Counter Strike, который вдохновился KennyS и решил стать крутым AWP-шером.</p>'
+  + '<p>Руководство по игре с AWP в 21 этап. Привет, меня зовут Чекунец, и я — простой игрок Counter Strike, который вдохновился KennyS и решил стать крутым AWP-шером.</p>'
   + '<img class="guide-cover" src="assets/guides/awp.jpg" alt="AWP" loading="lazy">'
   + '<h3>21 этап прокачки AWP</h3>'
   + '<h4>Этап 1: Освой основы</h4><p>Тренируйся на Aim Botz, Anubis, Dust 2, Mirage, Ancient, Vertigo, Nuke, Inferno. Начни с неподвижных мишеней, переходи к движущимся. Перерыв 10-15 минут каждый час.</p>'
