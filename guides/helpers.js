@@ -18,21 +18,28 @@ function showPage(id) {
 }
 
 function navigate(page, guideId) {
-  var bread = document.getElementById('breadCurrent');
+  var sub = document.getElementById('subHeader');
+  var breadTitle = document.getElementById('breadTitle');
+  var breadSep = document.getElementById('breadSepTitle');
+
   if (page === 'profile') {
     showPage('pageProfile');
     document.getElementById('nav-profile').classList.add('active');
-    bread.textContent = '\u0413\u043b\u0430\u0432\u043d\u0430\u044f';
+    sub.classList.remove('visible');
     window.location.hash = '#profile';
   } else if (page === 'guides') {
     showPage('pageGuides');
     document.getElementById('nav-guides').classList.add('active');
-    bread.textContent = '\u0412\u0441\u0435 \u0433\u0430\u0439\u0434\u044b';
+    document.getElementById('breadGuidesLink').classList.add('current');
+    sub.classList.add('visible');
+    breadTitle.textContent = '';
+    breadSep.style.display = 'none';
     renderList('guidesListFull');
     window.location.hash = '#guides';
   } else if (page === 'guide' && guideId && CONTENT[guideId]) {
     showPage('pageGuideView');
     document.getElementById('nav-guides').classList.add('active');
+    document.getElementById('breadGuidesLink').classList.remove('current');
     window.scrollTo(0,0);
     document.getElementById('guideContent').innerHTML = CONTENT[guideId];
     var guide = GUIDE_DATA.find(function(g) { return g.id === guideId; });
@@ -41,8 +48,10 @@ function navigate(page, guideId) {
       if (goldSpan) {
         goldSpan.textContent = guide.rating + ' ' + guide.stars;
       }
+      breadTitle.textContent = guide.title;
     }
-    bread.textContent = GUIDE_DATA.find(function(g) { return g.id === guideId; }).title;
+    breadSep.style.display = 'inline';
+    sub.classList.add('visible');
     window.location.hash = '#' + guideId;
     document.querySelectorAll('.back-to-guides').forEach(function(el) {
       el.onclick = function() { navigate('guides'); };

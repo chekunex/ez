@@ -25,10 +25,13 @@
       <div class="header-right"><img class="avatar-small" src="https://avatars.fastly.steamstatic.com/25f4bf83b53d3f5722e76bcd8d0f8a3aebb3e9b3_full.jpg" alt="avatar"></div>
     </div>
   </header>
-  <div class="sub-header">
+  <div class="sub-header" id="subHeader">
     <div class="sub-header-inner">
-      <span class="bread">Чекунец</span><span class="sep">&#8250;</span>
-      <span class="bread-current" id="breadCurrent">Главная</span>
+      <a class="bread-link" id="breadHome" onclick="navigate('profile')">Главная</a>
+      <span class="sep">→</span>
+      <a class="bread-link" id="breadGuidesLink" onclick="navigate('guides')">Гайды</a>
+      <span class="sep" id="breadSepTitle">→</span>
+      <span class="bread-current" id="breadTitle"></span>
     </div>
   </div>
   <div class="page-content" id="pageContent">
