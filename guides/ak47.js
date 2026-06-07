@@ -1,6 +1,6 @@
 var ak47Guide = '<div class="guide-header"><div class="guide-header-meta"><span class="badge badge-cs2">AK-47 Guide</span><span class="meta-item">28 \u043c\u0430\u044f 2025</span><span class="meta-item">191 просмотр</span></div><h1>🔥 Гайд по AK-47 в CS2</h1><div class="author">by <strong>Чекунец</strong></div></div><div class="guide-body">'
   + '<p>AK-47 — королевская винтовка в CS2. Умение с ней играть отличает сильных игроков от слабых. В этом гайде разберём всё, что нужно знать.</p>'
-  + '<img class="guide-cover" src="https://images.steamusercontent.com/ugc/15839696516087259270/B7D95D932D8A37399A23DB875044DC79AF913CD6/" alt="AK-47" loading="lazy">'
+  + '<img class="guide-cover" src="assets/guides/ak47.jpg" alt="AK-47" loading="lazy">'
   + '<h3>Почему AK-47 бог</h3>'
   + '<p>AK-47 наносит 36 урона в тело и 108 в голову (с учётом брони — 96). Один хедшот — и враг мёртв. Высокая точность первой пули, хорошая скорострельность и универсальность делают её лучшим выбором для T-стороны.</p>'
   + '<h3>Отдача и контроль спрея</h3>'

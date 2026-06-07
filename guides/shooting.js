@@ -1,6 +1,6 @@
 var shootingGuide = '<div class="guide-header"><div class="guide-header-meta"><span class="badge badge-cs2">Shooting Guide</span><span class="meta-item">20 \u043e\u043a\u0442 2023</span><span class="meta-item">8,334 просмотра</span><span class="meta-item gold">★★★☆☆</span></div><h1>Основы стрельбы в CS2</h1><div class="author">by <strong>Чекунец</strong></div></div><div class="guide-body">'
   + '<p>Стрельба в CS2 — это не просто нажать на кнопку мыши. Понимание механик спрея, отдачи и разброса отделяет про-игроков от любителей. В этом гайде разложим всё по полочкам.</p>'
-  + '<img class="guide-cover" src="https://images.steamusercontent.com/ugc/2145461285221055035/655ECCB31A7EA356A84901C0D433B9722D1F9C0B/" alt="Shooting" loading="lazy">'
+  + '<img class="guide-cover" src="assets/guides/shooting.jpg" alt="Shooting" loading="lazy">'
   + '<h3>Что такое спрей, отдача и разброс</h3>'
   + '<p><strong>Спрей</strong> — непрерывная стрельба с контролем отдачи. <strong>Отдача</strong> — подброс ствола, который нужно компенсировать движением мыши. <strong>Разброс</strong> — случайное отклонение пуль от точки прицела, которое увеличивается при движении и длинной стрельбе.</p>'
   + '<p>Ключевое правило: никогда не стреляй на бегу. Остановись, дай разбросу успокоиться, только потом стреляй.</p>'

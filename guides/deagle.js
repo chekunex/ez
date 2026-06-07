@@ -1,6 +1,6 @@
 var deagleGuide = '<div class="guide-header"><div class="guide-header-meta"><span class="badge badge-cs2">Deagle Guide</span><span class="meta-item">2 \u0444\u0435\u0432 2025</span><span class="meta-item">1,439 просмотров</span></div><h1>Как научиться играть с Deagle в CS2</h1><div class="author">by <strong>Чекунец</strong></div></div><div class="guide-body">'
   + '<p>Desert Eagle — легендарный пистолет, способный убить с одного выстрела в голову. Но освоить его непросто. В этом гайде разберём ключевые навыки игры с Deagle.</p>'
-  + '<img class="guide-cover" src="https://images.steamusercontent.com/ugc/54707509769806581/7D589F8D8B70EE722F13C1BB05B97FA55E876F06/" alt="Deagle" loading="lazy">'
+  + '<img class="guide-cover" src="assets/guides/deagle.jpg" alt="Deagle" loading="lazy">'
   + '<h3>Aim (Наводка на голову)</h3>'
   + '<p>Deagle эффективен только при попадании в голову. Держи прицел на уровне головы всегда. Тренируйся на карте Aim Botz: 200 тапов в голову каждый день. Фокусируйся на точности, а не на скорости.</p>'
   + '<h3>Трекинг</h3>'

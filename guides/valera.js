@@ -1,6 +1,6 @@
 var valeraGuide = '<div class="guide-header"><div class="guide-header-meta"><span class="badge badge-cs2">CS2 Guide</span><span class="meta-item">29 \u044f\u043d\u0432 2025</span><span class="meta-item">17,019 просмотров</span><span class="meta-item gold">★★★★★</span></div><h1>👑 Как стать лучшим? [CS2]</h1><div class="author">by <strong>Чекунец</strong></div></div><div class="guide-body">'
   + '<p>Хочешь стать лучшим в CS2? Этот гайд — твой путь к величию. Разберём настройки, психологию и тренировки, которые выделят тебя из толпы.</p>'
-  + '<img class="guide-cover" src="https://images.steamusercontent.com/ugc/56959309574865856/A8C9D4B6B8BBC281A48384034D9C873E3E70EB6B/" alt="Valera" loading="lazy">'
+  + '<img class="guide-cover" src="assets/guides/valera.jpg" alt="Valera" loading="lazy">'
   + '<h3>Настройки</h3>'
   + '<h4>4:3 vs 16:9</h4><p>Растянутый 4:3 делает модели шире — в них легче попадать. 16:9 даёт больше обзора по бокам. Выбирай то, в чём чувствуешь себя увереннее. Большинство про-игроков играют на 4:3 (1280x960 или 1024x768).</p>'
   + '<h4>144Hz мониторы</h4><p>Частота обновления экрана критична. 144Hz (или выше) даёт плавную картинку и быструю реакцию. На 60Hz ты будешь в проигрыше против любого, у кого 144+.</p>'

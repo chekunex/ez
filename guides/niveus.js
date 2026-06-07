@@ -1,6 +1,6 @@
 var niveusGuide = '<div class="guide-header"><div class="guide-header-meta"><span class="badge badge-all">Ultimate Guide</span><span class="meta-item">29 \u043c\u0430\u0440 2025</span><span class="meta-item">6,744 просмотра</span><span class="meta-item gold">★★★★★</span></div><h1>Как побеждать в CS2: Гайд для тех, кто хочет тащить</h1><div class="author">by <strong>Чекунец</strong></div></div><div class="guide-body">'
   + '<p>Руководство для игроков, которые хотят повысить свой уровень в CS2. Советы по стрельбе, движению, тактике, экономике и менталу.</p>'
-  + '<img class="guide-cover" src="https://images.steamusercontent.com/ugc/16432158169393339/E540617F9473AF25EFCE39FAC4F65AA7905E0B97/" alt="CS2" loading="lazy">'
+  + '<img class="guide-cover" src="assets/guides/niveus.jpg" alt="CS2" loading="lazy">'
   + '<h3>Введение</h3><p>90% игроков топчутся — думают 1000 часов DM = скилл, верят хайлерам, играют на эмоциях. Топ-игроки анализируют промахи, победа начинается с бая.</p>'
   + '<h3>1. Как перестать мазать</h3><h4>Настройки</h4>'
   + '<p><strong>DPI:</strong> 400-800 + 1.0-2.5 sens. Выключи акселерацию. <strong>Прицел:</strong> статичный, размер 2-3. <strong>Графика:</strong> сглаживание OFF, билинейная.</p>'

@@ -1,6 +1,6 @@
 var secretsGuide = '<div class="guide-header"><div class="guide-header-meta"><span class="badge badge-cs2">Aim Guide</span><span class="meta-item">9 \u0430\u0432\u0433 2025</span><span class="meta-item">644 просмотра</span><span class="meta-item gold">★★★★☆</span></div><h1>Секреты стрельбы в CS2: попадать в голову с первого выстрела</h1><div class="author">by <strong>Чекунец</strong></div></div><div class="guide-body">'
 + '<p>Хочешь перестать спрейть в молоко и начать стабильно забирать врагов одним кликом? В CS2 результат даёт не только скорость реакции, но и техника, контроль и внимание к деталям. В этом руководстве собраны проверенные приёмы из практики киберспортсменов.</p>'
-+ '<img class="guide-cover" src="https://images.steamusercontent.com/ugc/9849845769474771689/1E0F5380EB1782161F267325C689D60BD56A9C1E/" alt="Aim" loading="lazy">'
++ '<img class="guide-cover" src="assets/guides/secrets.jpg" alt="Aim" loading="lazy">'
 + '<h3>1. Основа — стойка и прицеливание</h3>'
 + '<h4>Правильная стойка</h4>'
 + '<p>Всегда держись чуть сбоку от угла, чтобы минимизировать площадь, видимую врагу. Перед выстрелом остановись — движение сильно сбивает точность. Держи прицел на уровне головы даже во время перемещений. Это избавит от лишнего времени на прицеливание.</p>'
